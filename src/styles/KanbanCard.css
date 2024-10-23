@@ -1,0 +1,114 @@
+/* src/styles/KanbanCard.css
+
+.kanban-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.kanban-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.kanban-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.kanban-card p {
+  font-size: 12px;
+  color: #666;
+}
+
+.priority {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.priority-0 {
+  background-color: #e0e0e0;
+  color: #666;
+}
+
+.priority-1 {
+  background-color: #4caf50;
+  color: white;
+}
+
+.priority-2 {
+  background-color: #ff9800;
+  color: white;
+}
+
+.priority-3 {
+  background-color: #f44336;
+  color: white;
+}
+
+.priority-4 {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+} */
+/* src/styles/KanbanCard.css */
+/* src/styles/KanbanCard.css */
+/* src/styles/KanbanCard.css */
+
+.kanban-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px; /* Ensures the card has enough height for the image and priority text */
+}
+
+.kanban-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.kanban-card p {
+  font-size: 12px;
+  color: #666;
+}
+
+.priority {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: grey; /* Ensure priority text is grey */
+}
+
+/* Urgent Priority Icon positioned at the bottom left of the card */
+.urgent-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
